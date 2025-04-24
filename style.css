@@ -69,13 +69,6 @@ body {
     color: #423e3c;
   }
   
-  .button-row {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-  
   .button {
     background-color: #7d5c3b;
     color: #fff;
@@ -91,7 +84,20 @@ body {
   .button:hover {
     background-color: #5f4029;
   }
-  
+
+  .button-wrapper {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .button-wrapper.row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: unset;
+  }  
+
   section.highlight {
     padding: 3rem 2rem;
     background-color: #fcf7f0;
