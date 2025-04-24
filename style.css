@@ -162,3 +162,19 @@ body {
     margin-left: 1.5rem;
   }
   
+  .footer-icons {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .footer-icons a {
+    margin: 0 0.6rem;
+    color: #7d5c3b;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-icons a:hover {
+    color: #5f4029;
+  }
+  
