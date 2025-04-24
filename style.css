@@ -42,12 +42,19 @@ body {
   nav ul li a:hover {
     color: #7d5c3b;
   }
-  
+
   header {
-    text-align: center;
-    padding: 4rem 2rem;
     background-color: #fffaf5;
+    padding: 4rem 2rem;
+    text-align: center;
   }
+  
+  header .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
   
   h1 {
     font-size: 2.6rem;
@@ -55,7 +62,7 @@ body {
     color: #4a392e;
     text-align: center;
   }
-  
+
   .subtitle {
     font-style: italic;
     color: #7c6a5c;
