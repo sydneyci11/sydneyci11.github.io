@@ -144,3 +144,16 @@ body {
     color: #4a392e;
   }
   
+  .centered-list {
+    list-style-position: inside;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  
+  .centered-list li {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+  
