@@ -126,3 +126,10 @@ body {
     border-top: 1px solid #d9d4ce;
   }
   
+  body h1 {
+    font-size: 2.6rem;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    color: #4a392e;
+  }
+  
