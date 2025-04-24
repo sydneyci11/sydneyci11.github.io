@@ -5,23 +5,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seneca SEO Project | Sydney Chien</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Libre Baskerville', serif;
+      background-color: #fefcf9;
+      color: #2b2b2b;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #f6f1eb;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #d9d4ce;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #3a3a3a;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #3a3a3a;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #7d5c3b;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem 1rem;
+      background-color: #fffaf5;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #4a392e;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #423e3c;
+    }
+
+    section.highlight {
+      padding: 2rem 1rem;
+      background-color: #fcf7f0;
+      text-align: center;
+    }
+
+    section.highlight h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #5c4632;
+    }
+
+    section.highlight p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #55504a;
+    }
+
     .highlight ul {
       text-align: left;
       list-style-position: inside;
       max-width: 700px;
       margin: 1rem auto;
       padding-left: 1.5rem;
+      color: #55504a;
     }
-    header {
+
+    footer {
       text-align: center;
-      padding: 1.5rem 1rem;
-      background-color: #fffaf5;
-    }
-    header h1 {
-      font-size: 2rem;
+      padding: 1rem 0;
+      background-color: #f6f1eb;
+      font-size: 0.9rem;
+      color: #9b948b;
+      border-top: 1px solid #d9d4ce;
     }
   </style>
 </head>
