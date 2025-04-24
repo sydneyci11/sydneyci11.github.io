@@ -84,6 +84,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s;
+    margin-top: 1rem;
   }
   
   .button:hover {
