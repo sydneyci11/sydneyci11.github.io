@@ -157,3 +157,8 @@ body {
     margin-bottom: 0.5rem;
   }
   
+  .edu-indent {
+    display: inline-block;
+    margin-left: 1.5rem;
+  }
+  
