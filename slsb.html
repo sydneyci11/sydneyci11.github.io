@@ -154,14 +154,13 @@
     <p>Despite limited tracking time, SEO results show positive momentum. CTRs, rankings, and user engagement improved. Long-term tracking and refinement were recommended to the client for continued gains.</p>
   </section>
 
-  <footer>
-    <div class="footer-icons">
-        <a href="https://www.linkedin.com/in/chien-chun-i-sydney/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/sydneyci11" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:cc2897@cornell.edu"><i class="fas fa-envelope"></i></a>
-        <a href="ChunI_Chien_Resume.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
-    </div>
-    <p>© 2025 Sydney Chien. All rights reserved.</p>
-  </footer>
+  <div id="footer"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
