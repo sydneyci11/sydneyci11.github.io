@@ -1,180 +1,235 @@
 /* style.css */
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Libre Baskerville', serif;
-    background-color: #fefcf9;
-    color: #2b2b2b;
-    line-height: 1.6;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Baskerville', serif;
+  background-color: #fefcf9;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: rgba(246, 241, 235, 0.95); /* semi-transparent beige */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d9d4ce;
+
+  position: fixed;   /* stick at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* subtle shadow */
+  backdrop-filter: blur(4px); /* nice blur effect */
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #3a3a3a;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #7d5c3b;
+}
+
+header {
+  background-color: #fffaf5;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+header .content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+  color: #4a392e;
+  text-align: center;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #7c6a5c;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-size: 1rem;
+  color: #423e3c;
+  text-align: left;
+}
+
+.button {
+  background-color: #7d5c3b;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #5f4029;
+}
+
+.button-wrapper {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.button-wrapper.row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: unset;
+}
+
+section.highlight {
+  padding: 3rem 2rem;
+  background-color: #fcf7f0;
+  text-align: left;
+}
+
+section.highlight h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #5c4632;
+  text-align: center;
+}
+
+section.highlight p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #55504a;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #f6f1eb;
+  font-size: 0.9rem;
+  color: #9b948b;
+  border-top: 1px solid #d9d4ce;
+}
+
+body h1 {
+  font-size: 2.6rem;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  color: #4a392e;
+}
+
+.centered-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  list-style-position: outside;
+}
+
+.centered-list li {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.edu-indent {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.footer-icons {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.footer-icons a {
+  margin: 0 0.6rem;
+  color: #7d5c3b;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #5f4029;
+}
+
+/* Gallery grid for images in UX case studies */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Keep main content aligned and consistent across sections */
+header .content,
+section.highlight,
+.intro,
+.centered-list {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Responsive adjustments for mobile devices --- */
+@media (max-width: 640px) {
   nav {
-    background-color: #f6f1eb;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #d9d4ce;
+    flex-direction: column;         /* Stack nav items vertically on small screens */
+    gap: 0.5rem;
   }
-  
-  .logo {
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: #3a3a3a;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #3a3a3a;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #7d5c3b;
+
+  .gallery {
+    grid-template-columns: 1fr;     /* Use single-column layout for images */
+    gap: 1rem;
   }
 
   header {
-    background-color: #fffaf5;
-    padding: 4rem 2rem;
-    text-align: center;
+    padding: 3rem 1rem;             /* Reduce header padding for smaller screens */
   }
-  
-  header .content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  
-  
+
   h1 {
-    font-size: 2.6rem;
-    margin-bottom: 0.5rem;
-    color: #4a392e;
-    text-align: center;
+    font-size: 2rem;                /* Scale down main title */
   }
 
-  .subtitle {
-    font-style: italic;
-    color: #7c6a5c;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
   .intro {
-    max-width: 800px;
-    margin: 0 auto 2rem auto;
-    font-size: 1rem;
-    color: #423e3c;
-    text-align: left;
+    font-size: 0.95rem;             /* Slightly smaller intro text for readability */
   }
-  
-  .button {
-    background-color: #7d5c3b;
-    color: #fff;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s;
-    margin-top: 1rem;
-    display: inline-block;
-  }
-  
-  .button:hover {
-    background-color: #5f4029;
-  }
-
-  .button-wrapper {
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-
-  .button-wrapper.row {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    text-align: unset;
-  }  
-
-  section.highlight {
-    padding: 3rem 2rem;
-    background-color: #fcf7f0;
-    text-align: left;
-  }
-  
-  section.highlight h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #5c4632;
-    text-align: center;
-  }
-  
-  section.highlight p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1rem;
-    color: #55504a;
-    text-align: left;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #f6f1eb;
-    font-size: 0.9rem;
-    color: #9b948b;
-    border-top: 1px solid #d9d4ce;
-  }
-  
-  body h1 {
-    font-size: 2.6rem;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
-    color: #4a392e;
-  }
-  
-  .centered-list {
-    max-width: 800px;
-    margin: 0 auto;
-    padding-left: 1rem; 
-    list-style-position: outside; 
-  }
-  
-  
-  .centered-list li {
-    text-align: left;
-    margin-bottom: 0.5rem;
-  }
-  
-  .edu-indent {
-    display: inline-block;
-    margin-left: 1.5rem;
-  }
-  
-  .footer-icons {
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
-  
-  .footer-icons a {
-    margin: 0 0.6rem;
-    color: #7d5c3b;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-  }
-  
-  .footer-icons a:hover {
-    color: #5f4029;
-  }
-  
+}
