@@ -1,0 +1,176 @@
+<!-- hci-ux.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HCI UX Case Study | Sydney Chien</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin:0; padding:0;
+      font-family:'Libre Baskerville', serif;
+      background-color:#fefcf9;
+      color:#2b2b2b;
+      line-height:1.6;
+    }
+    nav {
+      background-color:#f6f1eb;
+      padding:1rem 2rem;
+      display:flex; justify-content:space-between; align-items:center;
+      border-bottom:1px solid #d9d4ce;
+    }
+    .logo { font-weight:700; font-size:1.4rem; color:#3a3a3a; }
+    nav ul { list-style:none; display:flex; gap:1.5rem; margin:0; padding:0; }
+    nav a { text-decoration:none; color:#3a3a3a; font-weight:500; transition:color .3s; }
+    nav a:hover { color:#7d5c3b; }
+    header {
+      padding:3rem 2rem;
+      background-color:#fffaf5;
+      text-align:center;
+    }
+    header h1 { font-size:1.6rem; color:#4a392e; margin-bottom:1rem; }
+    header .intro { max-width:680px; margin:0 auto; font-size:1rem; color:#423e3c; }
+    .meta { font-size:.95rem; color:#6a6560; margin-top:.5rem; }
+    .cta {
+      display:flex; justify-content:center; flex-wrap:wrap; gap:.8rem; margin-top:1rem;
+    }
+    .btn {
+      background:#4a392e; color:#fff;
+      padding:.6rem 1rem; border-radius:12px;
+      text-decoration:none; font-size:.95rem;
+      transition:background .3s;
+    }
+    .btn:hover { background:#7d5c3b; }
+    section.highlight {
+      padding:2rem;
+      background-color:#fcf7f0;
+      max-width:900px;
+      margin:1.5rem auto;
+      border-radius:8px;
+    }
+    section.highlight h2 {
+      font-size:1.3rem; margin-bottom:1rem;
+      color:#5c4632; text-align:center;
+    }
+    section.highlight p, section.highlight ul {
+      font-size:1rem; color:#55504a;
+    }
+    .highlight ul { list-style-position:inside; padding-left:1.25rem; margin-top:.6rem; }
+
+    /* 圖片展示 */
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      text-align:center;
+      padding:1rem 0;
+      background-color:#f6f1eb;
+      font-size:.9rem;
+      color:#9b948b;
+      border-top:1px solid #d9d4ce;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><a href="profile.html" style="text-decoration:none; color:inherit;">Sydney Chien</a></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ux.html">Back to UX</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>HCI UX Case Study: International Student Hub</h1>
+    <p class="intro">10-week Human-Computer Interaction coursework at King’s College London<br>
+    End-to-end research and design of a digital hub to help new international students adapt to London life</p>
+    <p class="meta">Focus: Mental health support flow and peer connection experience</p>
+    <div class="cta">
+      <a class="btn" href="https://www.figma.com/design/Yqw39K1NnPebK1WENffMD5/HCI?node-id=0-1&p=f" target="_blank">Figma Prototype</a>
+      <a class="btn" href="https://miro.com/app/board/uXjVNec3Acw=/" target="_blank">Miro Board</a>
+      <a class="btn" href="https://github.com/sydneyci11/HCI-UX-International-Student-Hub" target="_blank">Full Case on GitHub</a>
+    </div>
+  </header>
+
+  <section class="highlight">
+    <h2>🎯 Project Context & Goals</h2>
+    <p>Newly arrived students face fragmented info across housing, finance, transport, wellbeing and social life.
+    We aimed to co-design a central hub that reduces effort, improves clarity and supports faster adaptation.</p>
+    <ul>
+      <li>Understand pain points via interviews and synthesis</li>
+      <li>Design inclusive experience across key life areas</li>
+      <li>Validate usefulness and ease of use through evaluation</li>
+    </ul>
+  </section>
+
+  <section class="highlight">
+    <h2>🔍 Research & Discovery</h2>
+    <ul>
+      <li>30+ interviews with international students across campuses</li>
+      <li>Empathy maps, personas, problem statements covering finance, housing, wellbeing, social, language</li>
+      <li>Journey mapping to identify high-stress pain points</li>
+      <li>Ideation workshops using Six Thinking Hats, HMW and How-Now-Wow matrix</li>
+    </ul>
+    <div class="gallery">
+      <img src="images/hci_ux/interview_questions.png" alt="Interview Guide">
+      <img src="images/hci_ux/empathy_map.png" alt="Empathy Map">
+      <img src="images/hci_ux/persona.png" alt="Persona">
+      <img src="images/hci_ux/HMW.png" alt="How Might We Board">
+    </div>
+  </section>
+
+  <section class="highlight">
+    <h2>💡 Ideation & Storyboarding</h2>
+    <p>Generated and refined ideas using sketching, storyboards, and structured prioritization frameworks.</p>
+    <div class="gallery">
+      <img src="images/hci_ux/sketching.png" alt="Sketching">
+      <img src="images/hci_ux/story_board.png" alt="Storyboard">
+    </div>
+  </section>
+
+  <section class="highlight">
+    <h2>🛠️ Design & Prototyping</h2>
+    <ul>
+      <li>Figma modular flows for accommodation, finance, mental health, social features</li>
+      <li>Navigation and content hierarchy focused on clarity</li>
+      <li>Usability testing and heuristic reviews with iteration</li>
+      <li>My focus: Mental health interface with resource access and peer connection</li>
+    </ul>
+    <div class="gallery">
+      <img src="images/hci_ux/prototype.png" alt="Prototype Screens">
+    </div>
+  </section>
+
+  <section class="highlight">
+    <h2>📈 Outcomes & Impact</h2>
+    <ul>
+      <li>Improved task clarity and faster navigation in testing</li>
+      <li>Positive feedback on tone and accessibility of wellbeing module</li>
+      <li>Roadmap delivered for long-term integration with university services</li>
+    </ul>
+  </section>
+
+  <section class="highlight">
+    <h2>🧩 Role & Contribution</h2>
+    <ul>
+      <li>Led UX research for mental health module: 5 in-depth interviews, synthesis into personas</li>
+      <li>Facilitated ideation workshops and aligned team on scope</li>
+      <li>Owned UI design of wellbeing flow in Figma</li>
+    </ul>
+  </section>
+
+  <footer>
+    Built by Sydney Chien • See Figma, Miro, and GitHub links above for full artifacts
+  </footer>
+</body>
+</html>
