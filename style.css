@@ -261,3 +261,20 @@ body { scroll-padding-top: var(--nav-h); }
 
 /* 舊的 centered-list 已不再使用（避免干擾） */
 .centered-list, .centered-list li { all: unset; }
+
+section.highlight > p,
+section.highlight > ul {
+  max-width: 62ch;
+  margin: 0.5rem auto 1.2rem auto;
+  text-align: center;
+  line-height: 1.75;
+  color: #423e3c;
+}
+section.highlight > ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+section.highlight > ul li {
+  text-indent: 0;
+  padding-left: 0;
+}
