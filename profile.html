@@ -5,14 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Sydney | Sydney Chien</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <nav>
-    <div class="logo"><a href="profile.html" style="text-decoration:none; color:inherit;">Sydney Chien</a></div>
+    <div class="logo"><a href="profile.html">Sydney Chien</a></div>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="ux.html">UX</a></li>
@@ -21,47 +26,82 @@
     </ul>
   </nav>
 
-  <header>
-    <h1>Hi, I’m Sydney 👋</h1>
-    <p class="intro">I’m a curious builder of systems and stories — with a scientific mind and a poetic soul. I bring together backgrounds in Information Science, Computer Science, and UX Research to craft human-centered digital tools.</p>
-    <p></p>
-    <p class="intro">I’m open to opportunities across UX research/design, data science/analysis, and software engineering — roles where I can bridge users and systems, and contribute with both empathy and logic. 
-        My interdisciplinary background gives me the flexibility to work across product development, 
-        from user needs to data insights to technical execution.</p>
-    <p class="intro">I’m especially excited by roles that value cross-functional thinking, and where I can grow into a thoughtful builder of digital tools — grounded in user empathy and supported by data and code.</p>
-  </header>
+  <main>
+    <header>
+      <div class="content">
+        <h1>Hi, I’m Sydney 👋</h1>
+        <p class="intro">
+          I’m a curious builder of systems and stories — with a scientific mind and a poetic soul.
+          I bring together backgrounds in Information Science, Computer Science, and UX Research
+          to craft human-centered digital tools.
+        </p>
 
-  <section class="highlight">
-    <h2>✨ About Me</h2>
-    <p>I studied at Cornell and King’s College London. My work explores the intersection between thoughtful design and technical systems, with experience spanning HCI, data analytics, and digital product development.</p>
-    <p>Beyond the screen, I love capturing still moments with a camera, getting lost in concerts and café corners, and creating things that speak to both heart and logic.</p>
-  </section>
+        <p class="intro">
+          I’m open to opportunities across UX research/design, data science/analysis, and software engineering —
+          roles where I can bridge users and systems, and contribute with both empathy and logic.
+          My interdisciplinary background gives me the flexibility to work across product development,
+          from user needs to data insights to technical execution.
+        </p>
 
-  <section class="highlight">
-    <h2>🎓 Background & Availability</h2>
-    <ul class="centered-list">
-      <li><strong>Visa Status:</strong> US F-1 (OPT Eligible), UK PSW eligible</li>
-      <li><strong>Education:</strong><br>
-        <span class="edu-indent">MPS in Information Science @ Cornell University</span><br>
-        <span class="edu-indent">BSc in Computer Science @ King’s College London</span>
-      </li>      
-      <li><strong>Languages:</strong> Native in Mandarin, Fluent in English, Speak Basic Japanese</li>
-    </ul>
-  </section>
+        <p class="intro">
+          I’m especially excited by roles that value cross-functional thinking,
+          and where I can grow into a thoughtful builder of digital tools — grounded in user empathy
+          and supported by data and code.
+        </p>
+      </div>
+    </header>
 
-  <section class="highlight">
-    <h2>🌏 Why I Do What I Do</h2>
-    <p>I believe that good design is not only functional but empathetic. I care deeply about inclusion, access, and clarity — and I build with the hope that technology can bridge worlds, not widen them.</p>
-  </section>
+    <section class="highlight">
+      <h2>✨ About Me</h2>
+      <div class="prose">
+        <p>
+          I studied at Cornell University and King’s College London.
+          My work explores the intersection between thoughtful design and technical systems,
+          with experience spanning HCI, data analytics, and digital product development.
+        </p>
+        <p>
+          Beyond the screen, I love capturing still moments with a camera,
+          getting lost in concerts and café corners, and creating things that speak to both heart and logic.
+        </p>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <h2>🎓 Background & Availability</h2>
+      <div class="prose">
+        <ul>
+          <li><strong>Visa Status:</strong> U.S. F-1 (OPT eligible), U.K. PSW eligible</li>
+          <li>
+            <strong>Education:</strong><br>
+            <span class="edu-indent">MPS in Information Science — Cornell University</span><br>
+            <span class="edu-indent">BSc in Computer Science — King’s College London</span>
+          </li>
+          <li>
+            <strong>Languages:</strong> Mandarin (native), English (fluent), Japanese (basic)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <h2>🌏 Why I Do What I Do</h2>
+      <div class="prose">
+        <p>
+          I believe that good design is not only functional but empathetic.
+          I care deeply about inclusion, access, and clarity — and I build with the hope
+          that technology can bridge worlds, not widen them.
+        </p>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="footer-icons">
-        <a href="https://www.linkedin.com/in/chien-chun-i-sydney/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/sydneyci11" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:cc2897@cornell.edu"><i class="fas fa-envelope"></i></a>
-        <a href="ChunI_Chien_Resume.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
+      <a href="https://www.linkedin.com/in/chien-chun-i-sydney/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/sydneyci11" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="mailto:cc2897@cornell.edu"><i class="fas fa-envelope"></i></a>
+      <a href="ChunI_Chien_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i></a>
     </div>
-      
     <p>© 2025 Sydney Chien. All rights reserved.</p>
   </footer>
 </body>
