@@ -68,7 +68,7 @@ header {
 header .content {
   max-width: 70ch;
   margin: 0 auto;
-  text-align: left;
+  text-align: left; /* header 內文維持左對齊 */
 }
 
 h1 {
@@ -112,7 +112,7 @@ h1 {
 
 .button-wrapper {
   margin-top: 1.5rem;
-  text-align: center;
+  text-align: center; /* 預設置中按鈕 */
 }
 .button-wrapper.row {
   display: flex;
@@ -127,15 +127,29 @@ section.highlight {
   background-color: #fcf7f0;
 }
 
-/* 標題與內文對齊同一條版心 */
+/* 全站 h2 置中（內文仍可左對齊） */
 section.highlight h2 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   color: #5c4632;
-  text-align: left;
-  max-width: 70ch;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* 標題下的柔和分隔線 */
+section.highlight h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #cbb89a;
+  margin: 0.6rem auto 0 auto;
+  border-radius: 2px;
+  opacity: 0.6;
 }
 
 /* === Prose (統一文字區塊樣式) === */
@@ -145,6 +159,7 @@ section.highlight h2 {
   font-size: clamp(0.98rem, 0.4vw + 0.9rem, 1.06rem);
   line-height: 1.7;
   color: #423e3c;
+  text-align: left; /* 預設左對齊（可讀性最好） */
 }
 
 .prose p {
@@ -164,6 +179,14 @@ section.highlight h2 {
   text-indent: -1.2rem;
 }
 
+/* === 可選：將整個 section 置中的輔助類 ===
+   需要整段（段落、清單、按鈕）都置中時，在 <section> 加 class="highlight center-section" */
+.center-section { text-align: center; }
+.center-section .prose { text-align: center; }
+.center-section .prose p { text-align: center; margin-left: auto; margin-right: auto; }
+.center-section .prose ul { list-style-position: inside; text-align: center; padding-left: 0; }
+.center-section .button-wrapper { text-align: center; }
+
 /* 教育欄縮排 */
 .edu-indent {
   display: inline-block;
@@ -182,13 +205,6 @@ section.highlight h2 {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
-
-/* 若想讓圖比文字寬可開啟以下（選擇性）
-.prose .gallery {
-  max-width: min(100%, 950px);
-  margin-left: calc(50% - min(100%, 950px)/2);
-}
-*/
 
 /* === Footer === */
 footer {
@@ -240,14 +256,8 @@ footer {
 }
 
 /* === Utility === */
-:root {
-  --nav-h: 64px;
-}
-body {
-  scroll-padding-top: var(--nav-h);
-}
+:root { --nav-h: 64px; }
+body { scroll-padding-top: var(--nav-h); }
 
-/* 舊的 centered-list 已不再使用 */
-.centered-list, .centered-list li {
-  all: unset;
-}
+/* 舊的 centered-list 已不再使用（避免干擾） */
+.centered-list, .centered-list li { all: unset; }
