@@ -6,81 +6,143 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Projects | Sydney Chien</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="disciplines.css">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+  <meta name="description" content="Explore Sydney Chien’s data projects in portfolio optimization, tourism analytics, sentiment analysis, internet traffic, and diagnostic pricing." />
 </head>
-<body>
-  <nav>
-    <div class="logo"><a href="profile.html" style="text-decoration:none; color:inherit;">Sydney Chien</a></div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="ux.html">UX</a></li>
-      <li><a href="swe.html">Engineering</a></li>
-    </ul>
+<body class="interior project-page data-page">
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="logo">
+        <a class="brand" href="profile.html" aria-label="About Sydney Chien">
+          <span class="brand-mark" aria-hidden="true">SC</span>
+          <span class="brand-text"><span class="brand-name">Sydney Chien</span><span class="brand-caption">CODE · RESEARCH · DATA</span></span>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="swe.html"><span class="nav-index" aria-hidden="true">01</span><span>Engineering</span></a></li>
+        <li><a href="ux.html"><span class="nav-index" aria-hidden="true">02</span><span>UX</span></a></li>
+        <li><a href="ds.html" class="is-active" aria-current="page"><span class="nav-index" aria-hidden="true">03</span><span>Data</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-contact" href="mailto:cc2897@cornell.edu" aria-label="Contact Sydney by email" data-label="Contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+        </a>
+        <a class="nav-resume" href="ChunI_Chien_Resume.pdf" target="_blank" rel="noopener" aria-label="View resume (PDF, opens in a new tab)" data-label="Resume">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg>
+        </a>
+      </div>
+    </div>
   </nav>
 
-  <header>
-    <div class="content">
-      <h1>Data Science & Analytics</h1>
+  <main>
+  <header class="page-hero">
+      <div class="content">
+        <p class="page-kicker">03 / INSIGHT</p>
+        <h1>Data Science & Analytics</h1>
       <p class="intro">From exploratory analysis to dashboard visualization and AI modeling — these projects show how I turn raw data into insight and action.</p>
-    </div>
+        <p class="page-meta">DATA SCIENCE & ANALYTICS / 05 PROJECTS</p>
+      </div>
     </header>
 
-  <section class="highlight">
-    <h2>📊 AI-Driven Portfolio Optimization in Taiwan Stock Market</h2>
-    <p>Developed a Monte Carlo simulation-based MPT model for portfolio selection, achieving 9.11% annualized return with risk control. Demonstrates applied data science and financial modeling.</p>
-    <div class="button-wrapper">
-      <a class="button" href="https://github.com/sydneyci11/AI-Stock-Portfolio-Optimization" target="_blank">View Project</a>
+  <section class="page-section analysis-row" aria-labelledby="section-1-title">
+      <div class="section-heading">
+        <p class="section-index">01 / FINANCIAL MODELING</p>
+        <h2 id="section-1-title">AI-Driven Portfolio Optimization in Taiwan Stock Market</h2>
+        <p class="project-period"><time datetime="2023-10">Oct 2023</time>–<time datetime="2024-04">Apr 2024</time></p>
+        <div class="button-wrapper">
+      <a class="button" href="https://github.com/sydneyci11/AI-Stock-Portfolio-Optimization" target="_blank" rel="noopener"><span class="link-label">View Project</span></a>
     </div>
-  </section>
+      </div>
+      <div class="section-body"><p class="analysis-question">How can portfolio selection balance return and risk?</p><p class="analysis-label">APPROACH & FINDINGS</p>
+        <p>Developed a Monte Carlo simulation-based MPT model for portfolio selection, achieving 9.11% annualized return with risk control. Demonstrates applied data science and financial modeling.</p>
+      <ul class="method-tags" aria-label="Analysis methods"><li>Monte Carlo simulation</li><li>Modern Portfolio Theory</li></ul>
+      </div>
+    </section>
 
-  <section class="highlight">
-    <h2>📈 Seneca Lake Scenic Byway Google Analytics Project</h2>
-    <p>Consulting project for a regional tourism group. I conducted Google Analytics & Google Search Console analysis, identified issues (e.g., high bounce rate, low CTR), and implemented SEO targeting high-volume queries (e.g., “Seneca Lake wineries”).<br>
+  <section class="page-section analysis-row" aria-labelledby="section-2-title">
+      <div class="section-heading">
+        <p class="section-index">02 / ANALYTICS · SEO</p>
+        <h2 id="section-2-title">Seneca Lake Scenic Byway Google Analytics Project</h2>
+        <p class="project-period"><time datetime="2024-09">Sep 2024</time>–<time datetime="2024-12">Dec 2024</time></p>
+        <div class="button-wrapper">
+      <a class="button" href="slsb.html"><span class="link-label">Learn More</span></a>
+    </div>
+      </div>
+      <div class="section-body"><p class="analysis-question">What helps visitors discover and engage with a tourism website?</p><p class="analysis-label">APPROACH & FINDINGS</p>
+        <p>Consulting project for a regional tourism group. I conducted Google Analytics & Google Search Console analysis, identified issues (e.g., high bounce rate, low CTR), and implemented SEO targeting high-volume queries (e.g., “Seneca Lake wineries”).<br>
       → CTR improved by 19.67%, top-10 keyword visibility increased (477 → 489), and 200%+ traffic growth on key seasonal pages. I edited meta descriptions, restructured content, and optimized page titles in Squarespace.</p>
-    <div class="button-wrapper">
-      <a class="button" href="slsb.html">Learn More</a>
-    </div>
-  </section>
+      <ul class="method-tags" aria-label="Analysis methods"><li>Google Analytics</li><li>Search Console</li><li>Squarespace</li></ul>
+      </div>
+    </section>
 
-  <section class="highlight">
-    <h2>📝 Yelp Capstone Project (User Behavior & Sentiment)</h2>
-    <p>Conducted multi-faceted Yelp review analysis using correlation metrics, review pattern tracking, 
+  <section class="page-section analysis-row" aria-labelledby="section-3-title">
+      <div class="section-heading">
+        <p class="section-index">03 / BEHAVIOR · SENTIMENT</p>
+        <h2 id="section-3-title">Yelp Capstone Project (User Behavior & Sentiment)</h2>
+        <p class="project-period"><time datetime="2025-03">Mar 2025</time></p>
+        <div class="button-wrapper">
+      <a class="button" href="https://github.com/sydneyci11/yelp-capstone" target="_blank" rel="noopener"><span class="link-label">View Report</span></a>
+    </div>
+      </div>
+      <div class="section-body"><p class="analysis-question">What can reviews reveal about restaurant experiences?</p><p class="analysis-label">APPROACH & FINDINGS</p>
+        <p>Conducted multi-faceted Yelp review analysis using correlation metrics, review pattern tracking,
       and keyword-level sentiment modeling. Provided data-driven insights and recommendations for Las Vegas restaurants.</p>
-    <div class="button-wrapper">
-      <a class="button" href="https://github.com/sydneyci11/yelp-capstone" target="_blank">View Report</a>
-    </div>
-  </section>
+      <ul class="method-tags" aria-label="Analysis methods"><li>Correlation analysis</li><li>Sentiment modeling</li></ul>
+      </div>
+    </section>
 
-  <section class="highlight">
-    <h2>📊 KCL DIGISILK Internet Traffic Analysis</h2>
-    <p>Conducted a Connectivity Analysis (CA) research project under the King’s Undergraduate Research Fellowship (KURF), 
-      examining internet traffic and access patterns between Chinese and Western applications from 2018 to 2021. 
-      This research demonstrates my strengths in cross-regional data analysis, API traffic inspection, and internet infrastructure studies.</p>
-    <div class="button-wrapper">
-      <a class="button" href="https://github.com/sydneyci11/KCL-DIGISILK-Internet-Traffic-Analysis" target="_blank">View Project</a>
+  <section class="page-section analysis-row" aria-labelledby="section-4-title">
+      <div class="section-heading">
+        <p class="section-index">04 / CONNECTIVITY RESEARCH</p>
+        <h2 id="section-4-title">KCL DIGISILK Internet Traffic Analysis</h2>
+        <p class="project-period"><time datetime="2023-06">Jun 2023</time>–<time datetime="2023-08">Aug 2023</time></p>
+        <div class="button-wrapper">
+      <a class="button" href="https://github.com/sydneyci11/KCL-DIGISILK-Internet-Traffic-Analysis" target="_blank" rel="noopener"><span class="link-label">View Project</span></a>
+      <a class="button" href="https://www.digisilk.eu/" target="_blank" rel="noopener"><span class="link-label">Official Project Website</span></a>
+      <a class="button" href="https://www.digisilk.eu/project-team" target="_blank" rel="noopener"><span class="link-label">Team Profile</span></a>
     </div>
-  </section>
+      </div>
+      <div class="section-body"><p class="analysis-question">How do connectivity patterns differ between China and the West?</p><p class="analysis-label">APPROACH & FINDINGS</p>
+        <p>Joined DIGISILK at King’s College London as a KURF summer research student in 2023, collaborating with a UK-based team to investigate differences in internet traffic and connectivity patterns between China and the West.</p>
+        <p>My contribution focused on connectivity analysis of Chinese and Western applications using data from 2018 to 2021, under the supervision of James Burroughs and Elisa Oreglia.</p>
+      <ul class="method-tags" aria-label="Analysis methods"><li>Internet traffic</li><li>Connectivity analysis</li></ul>
+      </div>
+    </section>
 
-  <section class="highlight">
-    <h2>🐾 AHDC Diagnostic Price Sensitivity Analysis</h2>
-    <p>Collaborated with Cornell’s Animal Health Diagnostic Center to analyze test demand data from 2019–2023. 
-      Found that a 12% price increase in 2023 triggered a sharp 58% drop in usage — nearly triple the impact of a similar hike in 2019. 
+  <section class="page-section analysis-row" aria-labelledby="section-5-title">
+      <div class="section-heading">
+        <p class="section-index">05 / BUSINESS INTELLIGENCE</p>
+        <h2 id="section-5-title">AHDC Diagnostic Price Sensitivity Analysis</h2>
+        <p class="project-period"><time datetime="2024-10">Oct 2024</time>–<time datetime="2024-12">Dec 2024</time></p>
+        <div class="button-wrapper row">
+      <a class="button" href="https://cornell.digication.com/kathryn-lee-info-4555-combined-comeet-business-intelligence-systems-2024fa/home" target="_blank" rel="noopener"><span class="link-label">View AHDC Portofolio</span></a>
+      <a class="button" href="https://cornell.digication.com/kathryn-lee-info-4555-combined-comeet-business-intelligence-systems-2024fa/tableau-dashboard-worksheet" target="_blank" rel="noopener"><span class="link-label">View Tableau Visualization</span></a>
+    </div>
+      </div>
+      <div class="section-body"><p class="analysis-question">How does diagnostic demand respond to price changes?</p><p class="analysis-label">APPROACH & FINDINGS</p>
+        <p>Collaborated with Cornell’s Animal Health Diagnostic Center to analyze test demand data from 2019–2023.
+      Found that a 12% price increase in 2023 triggered a sharp 58% drop in usage — nearly triple the impact of a similar hike in 2019.
       Built dynamic Tableau dashboards to visualize these trends and assist strategic pricing decisions.</p>
-    <div class="button-wrapper row">
-      <a class="button" href="https://cornell.digication.com/kathryn-lee-info-4555-combined-comeet-business-intelligence-systems-2024fa/home" target="_blank">View AHDC Portofolio</a>
-      <a class="button" href="https://cornell.digication.com/kathryn-lee-info-4555-combined-comeet-business-intelligence-systems-2024fa/tableau-dashboard-worksheet" target="_blank">View Tableau Visualization</a>
+      <ul class="method-tags" aria-label="Analysis methods"><li>Demand analysis</li><li>Tableau</li></ul>
+      </div>
+    </section>
+
+    <div class="page-onward">
+      <p>There’s more to explore.</p>
+      <div class="onward-links" role="navigation" aria-label="More portfolio pages">
+        <a href="index.html">Home<span aria-hidden="true"> ↗</span></a>
+        <a href="swe.html">Engineering<span aria-hidden="true"> ↗</span></a>
+        <a href="ux.html">UX<span aria-hidden="true"> ↗</span></a>
+      </div>
     </div>
-  </section>
+  </main>
 
   <div id="footer"></div>
-  <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer').innerHTML = data;
-      });
-  </script>
+  <script src="site.js" defer></script>
 </body>
 </html>

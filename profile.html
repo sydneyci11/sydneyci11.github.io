@@ -10,99 +10,155 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta name="description" content="Meet Sydney Chien, an AI Application Engineer at Foxconn Industrial Internet (Fii), CESBG HPC Platform, focused on LLM evaluation, production observability, and internal tools, with a background in UX, data, and software engineering." />
 </head>
-<body>
-  <nav>
-    <div class="logo"><a href="profile.html">Sydney Chien</a></div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="ux.html">UX</a></li>
-      <li><a href="ds.html">Data</a></li>
-      <li><a href="swe.html">Engineering</a></li>
-    </ul>
+<body class="interior profile-page">
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="logo">
+        <a class="brand" href="profile.html" aria-label="About Sydney Chien" aria-current="page">
+          <span class="brand-mark" aria-hidden="true">SC</span>
+          <span class="brand-text"><span class="brand-name">Sydney Chien</span><span class="brand-caption">CODE · RESEARCH · DATA</span></span>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="swe.html"><span class="nav-index" aria-hidden="true">01</span><span>Engineering</span></a></li>
+        <li><a href="ux.html"><span class="nav-index" aria-hidden="true">02</span><span>UX</span></a></li>
+        <li><a href="ds.html"><span class="nav-index" aria-hidden="true">03</span><span>Data</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-contact" href="mailto:cc2897@cornell.edu" aria-label="Contact Sydney by email" data-label="Contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+        </a>
+        <a class="nav-resume" href="ChunI_Chien_Resume.pdf" target="_blank" rel="noopener" aria-label="View resume (PDF, opens in a new tab)" data-label="Resume">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg>
+        </a>
+      </div>
+    </div>
   </nav>
 
   <main>
-    <header>
+    <header class="page-hero">
       <div class="content">
-        <h1>Hi, I’m Sydney 👋</h1>
+        <p class="page-kicker">THE PERSON BEHIND THE WORK</p>
+        <h1>Hi, I’m Sydney</h1>
         <p class="intro">
-          I’m a curious builder of systems and stories — with a scientific mind and a poetic soul.
-          I bring together backgrounds in Information Science, Computer Science, and UX Research
-          to craft human-centered digital tools.
+          I’m an AI Application Engineer at Foxconn Industrial Internet (Fii), working within
+          CESBG’s HPC Platform team on LLM applications for hardware
+          failure analysis and repair guidance. I focus on evaluation, production observability,
+          and internal tools that help teams assess and use AI systems.
         </p>
-
         <p class="intro">
-          I’m open to opportunities across UX research/design, data science/analysis, and software engineering —
-          roles where I can bridge users and systems, and contribute with both empathy and logic.
-          My interdisciplinary background gives me the flexibility to work across product development,
-          from user needs to data insights to technical execution.
+          My background in Information Science, Computer Science, and UX research shapes how I
+          approach engineering: understand the problem, examine the evidence, and build tools
+          that people can use with clarity and confidence.
         </p>
-
-        <p class="intro">
-          I’m especially excited by roles that value cross-functional thinking,
-          and where I can grow into a thoughtful builder of digital tools — grounded in user empathy
-          and supported by data and code.
-        </p>
+        <p class="page-meta">AI APPLICATION ENGINEER / LLM EVALUATION & OBSERVABILITY</p>
       </div>
     </header>
 
-    <section class="highlight">
-      <h2>✨ About Me</h2>
-      <div class="prose">
+    <section class="page-section" aria-labelledby="section-1-title">
+      <div class="section-heading">
+        <p class="section-index">01 / CURRENT WORK</p>
+        <h2 id="section-1-title">AI engineering in practice</h2>
+      </div>
+      <div class="section-body">
+        <p class="current-work-affiliation"><strong>Foxconn Industrial Internet (Fii)</strong><br>CESBG · HPC Platform</p>
+        <p class="work-period"><time datetime="2026-02">Feb 2026</time>–Present</p>
+        <p>I work on the systems around LLM applications — how their outputs are evaluated, how services are monitored, and how other teams interact with them.</p>
+        <ul>
+          <li><strong>Evaluation:</strong> Developing evaluation workflows and scoring criteria for AI-assisted diagnosis and guidance.</li>
+          <li><strong>Observability:</strong> Building monitoring and analytics tools to understand service behavior and investigate issues.</li>
+          <li><strong>Internal tooling:</strong> Creating self-service interfaces with progress tracking and clear status information.</li>
+        </ul>
+        <p>I work with engineering and domain specialists to clarify requirements, review results, and refine tools for the people who use them.</p>
+        <p><strong>Technical foundation:</strong> I’m familiar with GPU training and pretraining fundamentals, with hands-on experience reproducing established training workflows, comparing results with public references, and documenting validation steps.</p>
+        <div class="button-wrapper">
+          <a class="button" href="swe.html#current-work"><span class="link-label">Explore current work</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" aria-labelledby="section-2-title">
+      <div class="section-heading">
+        <p class="section-index">02 / BACKGROUND</p>
+        <h2 id="section-2-title">About Me</h2>
+      </div>
+      <div class="section-body">
+        <div class="prose">
         <p>
           I studied at Cornell University and King’s College London.
-          My work explores the intersection between thoughtful design and technical systems,
-          with experience spanning HCI, data analytics, and digital product development.
+          Before my current role, I explored HCI, data analytics, and digital product development.
+          That interdisciplinary foundation continues to inform how I build and evaluate AI applications.
+        </p>
+        <p>
+          My experience includes collaborating with US-based partners on the Seneca Lake Scenic Byway
+          project and researching China–West internet traffic and connectivity patterns with a
+          UK-based team at King’s College London.
         </p>
         <p>
           Beyond the screen, I love capturing still moments with a camera,
           getting lost in concerts and café corners, and creating things that speak to both heart and logic.
         </p>
       </div>
+      </div>
     </section>
 
-    <section class="highlight">
-      <h2>🎓 Background & Availability</h2>
-      <div class="prose">
+    <section class="page-section" aria-labelledby="section-3-title">
+      <div class="section-heading">
+        <p class="section-index">03 / EDUCATION & AVAILABILITY</p>
+        <h2 id="section-3-title">Background & Availability</h2>
+      </div>
+      <div class="section-body">
+        <div class="prose">
         <ul>
-          <li><strong>Visa Status:</strong> U.S. F-1 (OPT eligible), U.K. PSW eligible</li>
+          <li><strong>Visa Status:</strong> UK PSW eligible to Sep 2027</li>
           <li>
             <strong>Education:</strong><br>
-            <span class="edu-indent">MPS in Information Science — Cornell University</span><br>
-            <span class="edu-indent">BSc in Computer Science — King’s College London</span>
+            <span class="edu-indent">MPS in Information Science — Cornell University<span class="education-period"><time datetime="2024-08">Aug 2024</time>–<time datetime="2025-05">May 2025</time></span></span><br>
+            <span class="edu-indent">BSc in Computer Science — King’s College London<span class="education-period"><time datetime="2021-09">Sep 2021</time>–<time datetime="2024-07">Jul 2024</time></span></span>
           </li>
           <li>
             <strong>Languages:</strong> Mandarin (native), English (fluent), Japanese (basic)
           </li>
         </ul>
       </div>
+      </div>
     </section>
 
-    <section class="highlight">
-      <h2>🌏 Why I Do What I Do</h2>
-      <div class="prose">
+    <section class="page-section" aria-labelledby="section-4-title">
+      <div class="section-heading">
+        <p class="section-index">04 / DESIGN PHILOSOPHY</p>
+        <h2 id="section-4-title">Why I Do What I Do</h2>
+      </div>
+      <div class="section-body">
+        <div class="prose">
         <p>
           I believe that good design is not only functional but empathetic.
           I care deeply about inclusion, access, and clarity — and I build with the hope
           that technology can bridge worlds, not widen them.
         </p>
       </div>
+      </div>
     </section>
+    <div class="page-onward">
+      <p>There’s more to explore.</p>
+      <div class="onward-links" role="navigation" aria-label="More portfolio pages">
+        <a href="index.html">Home<span aria-hidden="true"> ↗</span></a>
+        <a href="swe.html">Engineering<span aria-hidden="true"> ↗</span></a>
+        <a href="ux.html">UX<span aria-hidden="true"> ↗</span></a>
+        <a href="ds.html">Data<span aria-hidden="true"> ↗</span></a>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <div class="footer-icons">
-      <a href="https://www.linkedin.com/in/chien-chun-i-sydney/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/sydneyci11" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-      <a href="mailto:cc2897@cornell.edu"><i class="fas fa-envelope"></i></a>
-      <a href="ChunI_Chien_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i></a>
-    </div>
-    <p>© 2025 Sydney Chien. All rights reserved.</p>
-  </footer>
+  <div id="footer"></div>
+  <script src="site.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+/* UX reads as a case-study collection; Data reads as an open research index. */
+.ux-page .ux-case { display: block; padding: 3rem 0; }
+.case-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; padding: 0 0 1.75rem; text-align: left; background: transparent; }
+.case-heading .section-heading { flex: 1; max-width: 43rem; }
+.ux-page .case-heading h2 { font-size: clamp(1.5rem, 2.6vw, 2.1rem); line-height: 1.45; }
+.case-heading .project-period { margin-bottom: 0; }
+.ux-page .case-heading .button-wrapper { flex: none; margin-top: .25rem; }
+.ux-page .site-design-entry { margin: .65rem 0 0; font-size: .82rem; }
+.ux-page .site-design-entry a { display: inline-flex; align-items: center; gap: .4rem; color: var(--copper); text-decoration: none; }
+.case-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: clamp(2rem, 5vw, 4rem); }
+.case-visual { margin: 0; min-width: 0; }
+.case-visual a { display: block; padding: clamp(1rem, 3vw, 2rem); border: 1px solid #d6c7b488; border-radius: 22px; background: radial-gradient(ellipse at 15% 0, #dfc5a144, transparent 70%), #f4eee3; box-shadow: 0 15px 35px #69503909; }
+.case-visual img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.case-visual figcaption { margin-top: .8rem; color: #817056; font: .68rem/1.8 'Courier New', monospace; }
+.case-notes { margin: 0; }
+.case-notes dt, .visual-kicker, .analysis-label { color: var(--teal); font: .68rem/1.8 'Courier New', monospace; letter-spacing: .08em; }
+.case-notes dt { margin: 1.15rem 0 .35rem; }
+.case-notes dt:first-child { margin-top: 0; }
+.case-notes dd { margin: 0; }
+.case-notes dd p { margin: 0; }
+.method-tags { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 1.3rem 0 0; list-style: none; }
+.interior .section-body .method-tags { padding: 0; margin-top: 1.3rem; list-style: none; }
+.interior .section-body .method-tags li { margin: 0; padding: .3rem .65rem; border-radius: 999px; background: #eee7da80; color: #77664e; font: .67rem/1.6 'Courier New', monospace; }
+.case-process { position: relative; isolation: isolate; overflow: hidden; padding: clamp(1.5rem, 3vw, 2.5rem); border: 1px solid #c4cabc88; border-radius: 22px; background: linear-gradient(130deg, #e8ede4, #f4f1e6); }
+.case-process::before { content: ''; position: absolute; z-index: -1; width: 240px; height: 110px; right: -85px; top: 55px; border: 1px solid #8c603b28; border-radius: 50%; transform: rotate(-32deg); box-shadow: 0 0 0 20px #8c603b05; }
+.visual-kicker { margin: 0 0 1rem; }
+.process-statement { margin: 0 0 1.5rem; color: var(--ink); font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.35; letter-spacing: -.04em; }
+.case-process ol { margin: 0; padding: 0; list-style: none; }
+.case-process li { display: flex; gap: 1rem; padding: .65rem 0; border-bottom: 1px solid #a6b4a533; color: #536457; font-size: .83rem; line-height: 1.7; }
+.case-process li span { color: #8c603b; font: .7rem/2 'Courier New', monospace; }
+.process-footnote { margin: 1.2rem 0 0; color: #6d7566; font: .66rem/1.8 'Courier New', monospace; }
+.ux-case:nth-of-type(even) .case-process { grid-column: 2; grid-row: 1; }
+.ux-case:nth-of-type(even) .section-body { grid-column: 1; grid-row: 1; }
+.data-page .analysis-row { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(2rem, 5vw, 4rem); padding: 2.75rem 0; }
+.data-page .analysis-row .section-heading { padding-right: 2rem; border-right: 1px solid var(--rule); }
+.data-page .analysis-row h2 { font-size: clamp(1.2rem, 2vw, 1.6rem); }
+.data-page .analysis-row .button-wrapper { gap: .4rem 1rem; margin-top: 1rem; }
+.data-page .analysis-row .button { font-size: .76rem; }
+.data-page .analysis-row .analysis-question { margin: 0 0 1rem; color: var(--ink); font-size: clamp(1.1rem, 1.7vw, 1.35rem); line-height: 1.6; letter-spacing: -.02em; }
+.data-page .analysis-row .analysis-label { margin: 0 0 .5rem; }
+/* Keep underlines attached to labels, with undecorated arrow cues. */
+.ux-page .ux-case .button, .data-page .analysis-row .button { align-items: center; gap: .4rem; min-height: 40px; box-sizing: border-box; border-bottom: 0; text-decoration: none; }
+@media (max-width: 800px) {
+  .case-heading { flex-direction: column; gap: .8rem; padding-bottom: 1.5rem; }
+  .ux-page .case-heading .button-wrapper { margin: 0; }
+  .case-layout, .data-page .analysis-row { grid-template-columns: 1fr; gap: 1.75rem; }
+  .ux-case:nth-of-type(even) .case-process, .ux-case:nth-of-type(even) .section-body { grid-column: auto; grid-row: auto; }
+  .data-page .analysis-row .section-heading { padding: 0; border: 0; }
+}
+@media (max-width: 640px) {
+  .ux-page .ux-case, .data-page .analysis-row { padding: 2rem 0; }
+  .case-visual a, .case-process { border-radius: 16px; }
+  .case-heading { gap: .65rem; }
+}
