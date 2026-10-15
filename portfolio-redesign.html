@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About This Website | Sydney Chien</title>
+  <meta name="description" content="A look at how this portfolio evolved, with before-and-after views and the design details behind its navigation, project cards, and interactions.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="portfolio-case.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="interior case-page portfolio-case-page">
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="logo">
+        <a class="brand" href="profile.html" aria-label="About Sydney Chien">
+          <span class="brand-mark" aria-hidden="true">SC</span>
+          <span class="brand-text"><span class="brand-name">Sydney Chien</span><span class="brand-caption">CODE · RESEARCH · DATA</span></span>
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="swe.html"><span class="nav-index" aria-hidden="true">01</span><span>Engineering</span></a></li>
+        <li><a href="ux.html" class="is-active" aria-current="location"><span class="nav-index" aria-hidden="true">02</span><span>UX</span></a></li>
+        <li><a href="ds.html"><span class="nav-index" aria-hidden="true">03</span><span>Data</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-contact" href="mailto:cc2897@cornell.edu" aria-label="Contact Sydney by email" data-label="Contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+        </a>
+        <a class="nav-resume" href="ChunI_Chien_Resume.pdf" target="_blank" rel="noopener" aria-label="View resume (PDF, opens in a new tab)" data-label="Resume">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <header class="page-hero">
+      <div class="content">
+        <p class="page-kicker">ABOUT THIS WEBSITE</p>
+        <h1>The thinking behind<br>this website.</h1>
+        <p class="intro" id="redesign-context">This website brings together my work across AI engineering, UX, and data. Here’s how its layout and interactions have evolved.</p>
+        <p class="project-period"><time datetime="2025">2025</time> original website · <time datetime="2026">2026</time> iteration</p>
+        <p class="page-meta">BEFORE & AFTER / DESIGN DETAILS</p>
+      </div>
+    </header>
+
+    <section class="comparison-section" aria-labelledby="redesign-preview">
+      <div class="comparison-heading"><p class="section-index">01 / BEFORE & AFTER</p><h2 id="redesign-preview">Make the next step visible.</h2><p>Two interface changes, with the reason behind each. Select an image to view it at full size.</p></div>
+      <article class="screenshot-story" aria-labelledby="capture-projects-title">
+        <h3 id="capture-projects-title">Choose a project, then act without scrolling.</h3>
+        <div class="screenshot-pair">
+          <figure class="comparison-capture"><figcaption><span class="capture-version">BEFORE</span>View Project and Live Demo follow the description.</figcaption><a href="images/portfolio-redesign/before-engineering-projects.png" target="_blank" rel="noopener" aria-label="Open before screenshot at full size"><img src="images/portfolio-redesign/before-engineering-projects.png" alt="Earlier Engineering page with the GitHub Tech Trend Observatory description centered above View Project and Live Demo buttons." width="2934" height="1594" loading="lazy"></a></figure>
+          <figure class="comparison-capture"><figcaption><span class="capture-version">AFTER</span>Project names stay visible; links sit beside the selected title.</figcaption><a href="images/portfolio-redesign/after-engineering-project-deck.png" target="_blank" rel="noopener" aria-label="Open after screenshot at full size"><img src="images/portfolio-redesign/after-engineering-project-deck.png" alt="Redesigned Side Projects section with a full-name selector, overlapping cards and GitHub project links in the top-right corner." width="2940" height="1600" loading="lazy"></a></figure>
+        </div>
+        <p class="capture-takeaway">Separate choosing from opening. Readers can select a project by name and access its source or demo before reading the full description.</p>
+      </article>
+      <article class="screenshot-story" aria-labelledby="capture-contact-title">
+        <h3 id="capture-contact-title">Keep contact and resume within reach.</h3>
+        <div class="screenshot-pair">
+          <figure class="comparison-capture"><figcaption><span class="capture-version">BEFORE</span>Contact and resume are available at the page bottom.</figcaption><a href="images/portfolio-redesign/before-contact-footer.png" target="_blank" rel="noopener" aria-label="Open before screenshot at full size"><img src="images/portfolio-redesign/before-contact-footer.png" alt="Bottom of the earlier Data page, showing contact and resume icons in the footer beneath the AHDC project." width="2940" height="1596" loading="lazy"></a></figure>
+          <figure class="comparison-capture"><figcaption><span class="capture-version">AFTER</span>The same actions are also available in the sticky navigation.</figcaption><a href="images/portfolio-redesign/after-homepage-hero.png" target="_blank" rel="noopener" aria-label="Open after screenshot at full size"><img src="images/portfolio-redesign/after-homepage-hero.png" alt="Redesigned homepage with current AI engineering positioning and contact and resume icons at the far right of the navigation." width="2938" height="1590" loading="lazy"></a></figure>
+        </div>
+        <p class="capture-takeaway">Make the next step available wherever a reader pauses. Compact icons preserve the visual style, with hover/focus labels and accessible names. Shown here: the old footer and new page top.</p>
+      </article>
+      <p class="comparison-caption">Desktop screenshots from October 15, 2026. Capture dimensions and page positions vary.</p>
+    </section>
+
+    <section class="page-section design-details-section" aria-labelledby="redesign-decisions">
+      <div class="section-heading"><p class="section-index">02 / DESIGN DETAILS</p><h2 id="redesign-decisions">Character, with a purpose.</h2><p class="design-intro">Warm serif type and orbital curves set the tone; compact labels and copper details give the system structure.</p></div>
+      <div class="design-feature">
+        <svg class="sphere-feature-art" viewBox="0 0 480 480" fill="none" aria-hidden="true">
+          <defs>
+            <radialGradient id="feature-sphere-light" cx="34%" cy="27%" r="78%"><stop offset="0" stop-color="#fff9e9"/><stop offset=".45" stop-color="#dfc7a3"/><stop offset=".78" stop-color="#997651"/><stop offset="1" stop-color="#345e59"/></radialGradient>
+            <linearGradient id="feature-orbit-ink" x1="50" y1="70" x2="430" y2="400" gradientUnits="userSpaceOnUse"><stop stop-color="#b58b5c"/><stop offset=".5" stop-color="#d0b18a"/><stop offset="1" stop-color="#9a7049"/></linearGradient>
+          </defs>
+          <circle cx="240" cy="240" r="190" stroke="url(#feature-orbit-ink)" stroke-opacity=".24"/>
+          <path d="M240 25V65M240 415V455M25 240H65M415 240H455" stroke="#a68c70" stroke-opacity=".45"/>
+          <circle cx="240" cy="240" r="153" stroke="url(#feature-orbit-ink)" stroke-opacity=".18"/>
+          <path d="M35 240 A205 82 0 0 1 445 240" transform="rotate(-38 240 240)" stroke="url(#feature-orbit-ink)" stroke-opacity=".28"/>
+          <path d="M70 240 A170 72 0 0 1 410 240" transform="rotate(48 240 240)" stroke="url(#feature-orbit-ink)" stroke-opacity=".28"/>
+          <circle cx="240" cy="240" r="91" fill="url(#feature-sphere-light)"/>
+          <path d="M162 203C205 233 260 253 326 245M165 286C209 286 270 271 316 229" stroke="#fff8e9" stroke-opacity=".3"/>
+          <path d="M445 240 A205 82 0 0 1 35 240" transform="rotate(-38 240 240)" stroke="url(#feature-orbit-ink)" stroke-opacity=".8"/>
+          <path d="M410 240 A170 72 0 0 1 70 240" transform="rotate(48 240 240)" stroke="url(#feature-orbit-ink)" stroke-opacity=".8"/>
+        </svg>
+        <div class="design-notes">
+          <article><p class="design-index">01 / IDENTITY</p><h3>Three fields, one orbit.</h3><p>The sphere brings Engineering, UX, and Data into a shared visual.</p></article>
+          <article><p class="design-index">02 / MEANING</p><h3>Values become directions.</h3><p>Creation, Empathy, and Insight reveal the idea behind each field; hover opens its destination.</p></article>
+          <article><p class="design-index">03 / FLOW</p><h3>From current work to selected projects.</h3><p>Assess, Observe, and Enable lead into projects, each presented in a format suited to its field.</p></article>
+        </div>
+      </div>
+    </section>
+    <div class="page-onward"><p>Keep exploring.</p><div class="onward-links" role="navigation" aria-label="More portfolio pages"><a href="index.html">Home<span aria-hidden="true"> ↗</span></a><a href="swe.html#section-4-title">Engineering<span aria-hidden="true"> ↗</span></a><a href="ux.html">UX<span aria-hidden="true"> ↗</span></a><a href="ds.html">Data<span aria-hidden="true"> ↗</span></a></div></div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* An editorial case illustrated with real Before/After screenshots. */
+.portfolio-case-page .page-hero h1 { max-width: 25ch; }
+.comparison-section { max-width: 1160px; width: calc(100% - 4rem); margin: 0 auto; padding: 3rem 0; border-bottom: 1px solid var(--rule); }
+.comparison-heading { max-width: 70ch; margin-bottom: 1.5rem; }
+.comparison-heading h2 { margin: 0 0 1rem; color: var(--ink); font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 400; letter-spacing: -.03em; }
+.comparison-heading > p:last-child { color: #626459; font-size: .9rem; line-height: 1.9; }
+.comparison-caption { color: #817056; font: .7rem/1.9 'Courier New', monospace; margin: 1rem 0 0; max-width: 100ch; }
+.portfolio-case-page .design-details-section { display: block; }
+.design-details-section .section-heading { margin-bottom: 1.5rem; }
+.design-details-section .section-heading h2 { margin-bottom: .5rem; }
+.design-intro { max-width: 62ch; color: #626459; font-size: .9rem; line-height: 1.8; }
+.design-feature { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(2rem, 6vw, 6rem); }
+.sphere-feature-art { display: block; width: min(100%, 390px); height: auto; justify-self: center; overflow: visible; }
+.design-notes article + article { border-top: 1px solid var(--rule); padding-top: 1rem; margin-top: 1rem; }
+.design-notes .design-index { margin: 0 0 .25rem; color: var(--copper); font: .66rem/1.7 'Courier New', monospace; letter-spacing: .08em; }
+.design-notes h3 { margin: 0 0 .35rem; color: var(--ink); font-size: 1rem; line-height: 1.6; font-weight: 400; }
+.design-notes article > p:last-child { margin: 0; color: #626459; font-size: .84rem; line-height: 1.8; }
+/* Side-by-side captured evidence, stacked on narrow screens. */
+.screenshot-story { margin: 2rem 0 2.5rem; }
+.screenshot-story + .screenshot-story { border-top: 1px solid var(--rule); padding-top: 2rem; }
+.screenshot-story h3 { margin: 0 0 1rem; color: var(--ink); font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.6; font-weight: 400; }
+.screenshot-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.comparison-capture { display: flex; flex-direction: column; min-width: 0; margin: 0; }
+.comparison-capture figcaption { flex: 1; margin-bottom: .75rem; color: #626459; font-size: .8rem; line-height: 1.8; }
+.capture-version { display: block; margin-bottom: .3rem; color: var(--copper); font: .68rem/1.8 'Courier New', monospace; letter-spacing: .08em; }
+.comparison-capture a { display: block; border: 1px solid #d5c5ac88; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px #69503908; }
+.comparison-capture img { display: block; width: 100%; height: auto; }
+.capture-takeaway { max-width: 85ch; margin: 1rem 0 0; color: #626459; font-size: .85rem; line-height: 1.9; }
+@media (max-width: 800px) {
+  .screenshot-pair { grid-template-columns: 1fr; gap: 1.5rem; }
+  .design-feature { grid-template-columns: 1fr; gap: 1.25rem; }
+  .sphere-feature-art { width: min(100%, 300px); }
+}
+@media (max-width: 640px) {
+  .comparison-section { width: calc(100% - 3rem); padding: 2rem 0; }
+}
