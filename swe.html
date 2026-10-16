@@ -44,7 +44,7 @@
       <div class="content">
         <p class="page-kicker">01 / CREATION</p>
         <h1>Software & Systems</h1>
-      <p class="intro">My current work focuses on LLM evaluation, production observability, and internal tools. Selected side projects show how I turn personal needs and technical ideas into working tools.</p>
+      <p class="intro">I build LLM evaluation workflows, self-service batch tools, and observability for production services. Selected projects show how I turn ideas into useful software.</p>
         <p class="page-meta">CURRENT WORK & SELECTED PROJECTS</p>
       </div>
     </header>
@@ -52,7 +52,7 @@
     <section class="current-work-chapter" id="current-work" aria-labelledby="current-work-title">
       <header class="chapter-masthead">
         <div>
-          <p class="chapter-index">01 / PROFESSIONAL PRACTICE</p>
+          <p class="chapter-index">PROFESSIONAL PRACTICE</p>
           <h2 id="current-work-title">Current Work<span class="chapter-period" aria-hidden="true">.</span></h2>
           <p class="chapter-note">AI engineering in practice.</p>
         </div>
@@ -62,71 +62,105 @@
           <p class="work-period"><time datetime="2026-02">Feb 2026</time>–Present</p>
         </div>
       </header>
+      <p class="work-privacy-note">The diagrams below show general workflows for illustration; they do not depict proprietary system architecture.</p>
       <div class="work-timeline">
         <section class="page-section" aria-labelledby="current-work-1-title">
       <div class="section-heading">
-        <p class="section-index">01 / EVALUATION</p>
-        <h3 id="current-work-1-title">LLM Evaluation Workflows</h3>
+        <p class="section-index">01 / AI EVALUATION</p>
+        <h3 id="current-work-1-title">AI Evaluation Workflow</h3>
       </div>
       <div class="section-body">
         <dl class="work-notes">
           <dt>Problem</dt>
-          <dd>AI-assisted diagnosis and guidance need consistent criteria so their outputs can be reviewed and compared.</dd>
+          <dd>AI-assisted diagnosis needs validated inputs and a consistent way to review results.</dd>
           <dt>My contribution</dt>
-          <dd>I develop evaluation workflows, scoring criteria, and result-review tools, working with colleagues to review the scoring approach.</dd>
+          <dd>As the primary developer, I expanded an early prototype into an integrated workflow for validating multi-source inputs, structuring evaluations, capturing feedback, and reviewing, comparing, and reassessing results.</dd>
           <dt>What I delivered</dt>
-          <dd>A repeatable workflow for preparing inputs, reviewing scores and explanations, and revisiting results.</dd>
+          <dd>A repeatable process with results that are easier to inspect and compare.</dd>
         </dl>
       </div>
+      <figure class="work-diagram">
+        <ol class="flow-steps" aria-label="Conceptual AI evaluation workflow">
+          <li class="flow-step"><strong>Evaluation inputs</strong><span>Samples · reference material</span></li>
+          <li class="flow-step"><strong>Data preparation</strong><span>Normalize · match · validate</span></li>
+          <li class="flow-step"><strong>Evaluation</strong><span>Structured assessment</span></li>
+          <li class="flow-step"><strong>Results &amp; review</strong><span>Comparison · feedback · reassessment</span></li>
+        </ol>
+      </figure>
     </section>
 
         <section class="page-section" aria-labelledby="current-work-2-title">
       <div class="section-heading">
-        <p class="section-index">02 / OBSERVABILITY</p>
-        <h3 id="current-work-2-title">Production Observability</h3>
+        <p class="section-index">02 / ASYNCHRONOUS WORKFLOWS</p>
+        <h3 id="current-work-2-title">Asynchronous Job Lifecycle</h3>
       </div>
       <div class="section-body">
         <dl class="work-notes">
           <dt>Problem</dt>
-          <dd>Teams need a clear view of service activity and task status to investigate unexpected behavior.</dd>
+          <dd>Batch operations need clear progress, status, and error handling.</dd>
           <dt>My contribution</dt>
-          <dd>I build monitoring and analytics components for an existing LLM service and investigate inconsistencies in task tracking and timing measurements.</dd>
+          <dd>I transformed developer-operated backend processes into configurable, self-service batch workflows with visible job status, errors, and recovery paths.</dd>
           <dt>What I delivered</dt>
-          <dd>Tools for reviewing service behavior, following task progress, and investigating issues.</dd>
+          <dd>Batch jobs that are easier to follow, recover, and extend.</dd>
         </dl>
       </div>
+      <figure class="work-diagram">
+        <div class="async-flow">
+          <ol class="flow-steps flow-steps--three" aria-label="Conceptual asynchronous job lifecycle">
+            <li class="flow-step"><strong>Submit job</strong><span>Start a processing request</span></li>
+            <li class="flow-step"><strong>Process</strong><span>Run background tasks</span></li>
+            <li class="flow-step"><strong>Track status</strong><span>Progress · completion · errors</span></li>
+          </ol>
+          <svg class="flow-outcome-connectors" viewBox="0 0 1000 24" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path class="branch-desktop" d="M750 0 V7 C750 16 250 14 250 24 M750 0 V24" />
+            <path class="branch-mobile" d="M500 0 V7 C500 16 250 14 250 24 M500 0 V24" />
+          </svg>
+          <div class="flow-branches" role="group" aria-label="Possible job outcomes">
+            <div class="flow-outcome"><strong>Completed</strong><span>Inspect results</span></div>
+            <div class="flow-outcome flow-outcome--recovery"><strong>Failed</strong><span>Review errors · recover</span></div>
+          </div>
+        </div>
+      </figure>
     </section>
 
         <section class="page-section" aria-labelledby="current-work-3-title">
       <div class="section-heading">
-        <p class="section-index">03 / INTERNAL TOOLS</p>
-        <h3 id="current-work-3-title">Self-service Internal Tools</h3>
+        <p class="section-index">03 / OBSERVABILITY</p>
+        <h3 id="current-work-3-title">Observability &amp; Diagnostics</h3>
       </div>
       <div class="section-body">
         <dl class="work-notes">
           <dt>Problem</dt>
-          <dd>Backend-only operations are difficult for other team members to run and follow independently.</dd>
+          <dd>Guidance services need traceable activity for performance analysis and fault diagnosis.</dd>
           <dt>My contribution</dt>
-          <dd>I develop web interfaces for running and tracking processing jobs, with job-level progress, item-level status, and failure details.</dd>
+          <dd>I build monitoring for requests, tasks, and events, then use lifecycle analysis to investigate failures and correct inconsistencies in monitoring data.</dd>
           <dt>What I delivered</dt>
-          <dd>A self-service workflow that lets team members start jobs, review progress, and inspect failures.</dd>
+          <dd>Improved operational visibility and reporting consistency through more reliable request and task tracking.</dd>
         </dl>
       </div>
+      <figure class="work-diagram">
+        <ol class="flow-steps" aria-label="General observability and diagnostics pattern">
+          <li class="flow-step"><strong>Application activity</strong><span>Requests · tasks · events</span></li>
+          <li class="flow-step"><strong>Operational signals</strong><span>Status · timing · failures</span></li>
+          <li class="flow-step"><strong>Analyze behavior</strong><span>Performance · inconsistencies</span></li>
+          <li class="flow-step"><strong>Operational insights</strong><span>Visibility · diagnosis · improvement</span></li>
+        </ol>
+      </figure>
     </section>
 
         <section class="page-section" aria-labelledby="current-work-4-title">
       <div class="section-heading">
-        <p class="section-index">04 / TECHNICAL FOUNDATION</p>
-        <h3 id="current-work-4-title">GPU Training & Benchmark Reproduction</h3>
+        <p class="section-index">04 / GPU TRAINING</p>
+        <h3 id="current-work-4-title">GPU Training &amp; Performance Validation</h3>
       </div>
       <div class="section-body">
         <dl class="work-notes">
-          <dt>Foundation</dt>
-          <dd>Transformer training and pretraining fundamentals, with hands-on experience running established GPU training workflows.</dd>
+          <dt>Focus</dt>
+          <dd>Transformer training and pretraining explored through distributed-training experiments and benchmark reproduction.</dd>
           <dt>My contribution</dt>
-          <dd>I reproduced an established training workflow, compared benchmark results with publicly documented NVIDIA references, and checked the runs against the reference configuration.</dd>
+          <dd>I run distributed-training experiments and validate reproduced benchmark workflows against public references.</dd>
           <dt>What I delivered</dt>
-          <dd>A documented validation procedure for team reuse, building on an existing workflow.</dd>
+          <dd>Documented, repeatable procedures and validation notes for team reuse.</dd>
         </dl>
       </div>
     </section>
@@ -136,7 +170,7 @@
     <section class="side-project-chapter" aria-labelledby="earlier-work-title">
       <header class="chapter-masthead side-masthead">
         <div>
-          <p class="chapter-index">02 / INDEPENDENT EXPLORATIONS</p>
+          <p class="chapter-index">INDEPENDENT EXPLORATIONS</p>
           <h2 id="earlier-work-title">Side Projects<span class="chapter-period" aria-hidden="true">.</span></h2>
           <p class="chapter-note">Tools built around real needs.</p>
         </div>
@@ -161,7 +195,7 @@
           <div class="project-panel" role="region" aria-labelledby="section-1-title">
             <div class="project-panel-heading">
               <div class="project-title-group">
-              <p class="section-index">01 / DATA PIPELINES · STREAMLIT</p>
+              <p class="section-index">DATA PIPELINES · STREAMLIT</p>
               <h3 id="section-1-title">GitHub Tech Trend Observatory (Streamlit App)</h3>
               <p class="project-period"><time datetime="2025">2025</time></p>
               </div>
@@ -188,7 +222,7 @@
           <div class="project-panel" role="region" aria-labelledby="twse-project-title">
             <div class="project-panel-heading">
               <div class="project-title-group">
-              <p class="section-index">02 / PERSONAL PROJECT</p>
+              <p class="section-index">PERSONAL PROJECT</p>
               <h3 id="twse-project-title">TWSE Market Data Explorer</h3>
               <p class="project-period"><time datetime="2026">2026</time></p>
               </div>
@@ -223,7 +257,7 @@
           <div class="project-panel" role="region" aria-labelledby="section-2-title">
             <div class="project-panel-heading">
               <div class="project-title-group">
-              <p class="section-index">03 / DOCUMENT Q&A · AI</p>
+              <p class="section-index">DOCUMENT Q&amp;A · AI</p>
               <h3 id="section-2-title">AI Q&A Agent with LangChain & Streamlit</h3>
               <p class="project-period"><time datetime="2025">2025</time></p>
               </div>
@@ -250,7 +284,7 @@
           <div class="project-panel" role="region" aria-labelledby="section-4-title">
             <div class="project-panel-heading">
               <div class="project-title-group">
-              <p class="section-index">04 / DESIGN · DEVELOPMENT</p>
+              <p class="section-index">DESIGN · DEVELOPMENT</p>
               <h3 id="section-4-title">Personal Website (This One!)</h3>
               <p class="project-period"><time datetime="2025">2025</time> · Ongoing updates</p>
               </div>
@@ -277,7 +311,7 @@
           <div class="project-panel" role="region" aria-labelledby="section-3-title">
             <div class="project-panel-heading">
               <div class="project-title-group">
-              <p class="section-index">05 / API DATA · VISUALIZATION</p>
+              <p class="section-index">API DATA · VISUALIZATION</p>
               <h3 id="section-3-title">London Underground Crowding Viewer (TfL API + Chart.js)</h3>
               <p class="project-period"><time datetime="2022">2022</time></p>
               </div>

@@ -28,11 +28,29 @@
 .career-context .work-period { font-size: .78rem; margin-bottom: 0; }
 .work-timeline { position: relative; max-width: 1160px; width: calc(100% - 4rem); margin: 0 auto; padding: .75rem 0 1.5rem; }
 .work-timeline::before { content: ''; position: absolute; left: 5px; top: 3.5rem; bottom: 4rem; width: 1px; background: linear-gradient(#b99d78, #b99d7840); }
-.engineering-page .work-timeline .page-section { position: relative; box-sizing: border-box; padding: 2.5rem 0 2.5rem 2.5rem; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 3rem; }
+.engineering-page .work-timeline .page-section { position: relative; box-sizing: border-box; padding: 2.5rem 0 2.5rem 2.5rem; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); column-gap: 3rem; row-gap: 1.5rem; }
 .work-timeline .page-section:last-child { border-bottom: 0; }
 .work-timeline .section-heading::before { content: ''; position: absolute; left: 0; top: 3rem; width: 9px; height: 9px; border-radius: 50%; background: #a27f55; border: 1px solid #f6f2e9; box-shadow: 0 0 0 4px #f6f2e9; }
 .work-timeline .section-heading h3 { margin: 0; font-size: clamp(1.2rem, 2vw, 1.6rem); font-weight: 400; line-height: 1.5; color: var(--ink); letter-spacing: -.025em; }
 .work-timeline .work-notes { font-size: .9rem; }
+.work-privacy-note { box-sizing: border-box; max-width: 1160px; width: calc(100% - 4rem); margin: 1.1rem auto 0; padding-left: .9rem; border-left: 1px solid #b99d7880; color: #817665; font: .68rem/1.7 'Courier New', monospace; }
+.engineering-page .work-timeline .page-section > .work-diagram { grid-column: 1 / -1; box-sizing: border-box; width: 100%; margin: 0; }
+.work-diagram { padding: 1.1rem; border: 1px solid #c6b99f66; border-radius: 14px; background: linear-gradient(125deg, #fffdf980, #f4eee466); }
+.flow-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: start; gap: .85rem; margin: 0; padding: 0; list-style: none; }
+.flow-steps--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.flow-step { position: relative; display: flex; min-width: 0; min-height: 4.6rem; flex-direction: column; justify-content: center; gap: .4rem; padding: .8rem .75rem; border: 1px solid #c6b99f70; border-radius: 10px; background: #fffdf9c9; }
+.flow-step:not(:last-child)::before { position: absolute; top: 50%; right: -.85rem; width: .85rem; height: 1px; background: #a7835d; content: ''; transform: translateY(-50%); }
+.flow-step:not(:last-child)::after { position: absolute; top: 50%; right: -.85rem; width: .34rem; height: .34rem; border-top: 1px solid #8c603b; border-right: 1px solid #8c603b; content: ''; transform: translateY(-50%) rotate(45deg); }
+.flow-step strong, .flow-outcome strong { color: var(--ink); font: 400 .88rem/1.5 'Libre Baskerville', Georgia, serif; }
+.flow-step > span, .flow-status > span, .flow-outcome > span { color: #6d6a5f; font-size: .78rem; line-height: 1.6; }
+.async-flow { display: grid; width: 100%; max-width: 900px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0 auto; }
+.async-flow .flow-steps--three { grid-column: 1 / -1; width: 100%; max-width: none; margin: 0; }
+.flow-outcome-connectors { display: block; width: 100%; height: .9rem; grid-column: 2 / 4; }
+.flow-outcome-connectors path { fill: none; stroke: #a7835d; stroke-width: 1.25; vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; }
+.flow-outcome-connectors .branch-mobile { display: none; }
+.flow-branches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; width: 100%; grid-column: 2 / 4; margin: 0; }
+.flow-outcome { position: relative; display: flex; min-width: 0; flex-direction: column; gap: .3rem; margin: 0 .35rem; padding: .8rem .85rem; border: 1px solid #c6b99f70; border-radius: 10px; background: #fffdf9c9; }
+.flow-outcome--recovery { border-color: #b7834b70; background: #f6f0e5; }
 .side-project-chapter { padding-bottom: 4rem; }
 .side-masthead { border-bottom: 0; }
 .deck-guide { max-width: 25ch; }
@@ -127,11 +145,18 @@
   .engineering-page .work-timeline .page-section { grid-template-columns: 1fr; gap: 1.3rem; }
 }
 @media (max-width: 640px) {
-  .engineering-page .chapter-masthead, .work-timeline, .project-deck { width: calc(100% - 3rem); }
+  .engineering-page .chapter-masthead, .work-timeline, .project-deck, .work-privacy-note { width: calc(100% - 3rem); }
   .engineering-page .chapter-masthead { padding: 2.5rem 0 2rem; }
   .chapter-index { font-size: .65rem; }
   .engineering-page .work-timeline .page-section { padding: 2rem 0 2rem 1.5rem; }
   .work-timeline .section-heading::before { top: 2.5rem; }
+  .flow-steps, .flow-steps--three { grid-template-columns: 1fr; gap: .45rem; }
+  .flow-step:not(:last-child)::before { top: auto; right: auto; bottom: -.45rem; left: 50%; width: 1px; height: .45rem; background: #a7835d; transform: translateX(-50%); }
+  .flow-step:not(:last-child)::after { top: auto; right: auto; bottom: -.45rem; left: calc(50% - .17rem); width: .32rem; height: .32rem; border: 0; border-right: 1px solid #8c603b; border-bottom: 1px solid #8c603b; transform: rotate(45deg); }
+  .async-flow { grid-template-columns: minmax(0, 1fr); }
+  .flow-outcome-connectors, .flow-branches { grid-column: 1; }
+  .flow-outcome-connectors .branch-desktop { display: none; }
+  .flow-outcome-connectors .branch-mobile { display: block; }
   .project-picker { padding: 1.1rem; }
   .project-picker h3 { gap: .6rem; }
   .project-panel { padding: 1.5rem; }
