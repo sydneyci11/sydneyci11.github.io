@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="pages.css?v=profile-hero-16">
 
   <!-- Font Awesome -->
   <link rel="stylesheet"
@@ -46,20 +46,107 @@
   <main>
     <header class="page-hero">
       <div class="content">
-        <p class="page-kicker">THE PERSON BEHIND THE WORK</p>
-        <h1>Hi, I’m Sydney</h1>
-        <p class="intro">
-          I’m an AI Application Engineer at Foxconn Industrial Internet (Fii), working within
-          CESBG’s HPC Platform team on LLM applications for hardware
-          failure analysis and repair guidance. I focus on evaluation, production observability,
-          and internal tools that help teams assess and use AI systems.
-        </p>
-        <p class="intro">
-          My background in Information Science, Computer Science, and UX research shapes how I
-          approach engineering: understand the problem, examine the evidence, and build tools
-          that people can use with clarity and confidence.
-        </p>
-        <p class="page-meta">AI APPLICATION ENGINEER / LLM EVALUATION & OBSERVABILITY</p>
+        <div class="profile-hero-layout">
+          <div class="profile-hero-copy">
+            <p class="page-kicker">THE PERSON BEHIND THE WORK</p>
+            <div class="profile-hero-heading">
+              <h1>Hi, I’m Sydney</h1>
+            </div>
+            <p class="intro">
+              I bring user-centered thinking to technical problems. With a background in Information
+              Science, Computer Science, and UX research, I’m interested in making complex systems
+              easier to evaluate and use.
+            </p>
+            <p class="intro">
+              I’m curious about the space between people and technology: how we understand a problem,
+              what the evidence reveals, and how an idea can become something useful. That curiosity
+              is what keeps me moving between research, analysis, and building.
+            </p>
+            <p class="page-meta">PEOPLE-CENTERED THINKING / PRACTICAL AI SYSTEMS</p>
+          </div>
+          <div class="profile-hero-art" aria-hidden="true">
+            <svg class="profile-hero-emblem" viewBox="0 0 360 300" fill="none" focusable="false">
+            <defs>
+              <radialGradient id="profile-glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 93 -105 0 180 148)" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#d5b37d" stop-opacity=".42"/>
+                <stop offset="1" stop-color="#d5b37d" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="profile-core" cx="0" cy="0" r="1" gradientTransform="matrix(47 43 -43 47 157 125)" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#fffdf6"/>
+                <stop offset=".28" stop-color="#f0e0c2" stop-opacity=".98"/>
+                <stop offset=".62" stop-color="#c39660" stop-opacity=".94"/>
+                <stop offset=".86" stop-color="#89694b" stop-opacity=".94"/>
+                <stop offset="1" stop-color="#46584f"/>
+              </radialGradient>
+              <radialGradient id="profile-specular" cx="0" cy="0" r="1" gradientTransform="matrix(23 0 0 11 157 127)" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#fffdf7" stop-opacity=".68"/>
+                <stop offset=".48" stop-color="#fffdf7" stop-opacity=".22"/>
+                <stop offset="1" stop-color="#fffdf7" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="profile-window-reflection" x1="136" y1="118" x2="163" y2="176" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#fffdf7" stop-opacity=".34"/>
+                <stop offset=".48" stop-color="#f4e8d2" stop-opacity=".11"/>
+                <stop offset="1" stop-color="#fffdf7" stop-opacity="0"/>
+              </linearGradient>
+              <radialGradient id="profile-shadow" cx="0" cy="0" r="1" gradientTransform="matrix(33 23 -20 31 205 174)" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#273d35" stop-opacity=".24"/>
+                <stop offset=".58" stop-color="#34483e" stop-opacity=".1"/>
+                <stop offset="1" stop-color="#34483e" stop-opacity="0"/>
+              </radialGradient>
+              <clipPath id="profile-core-clip"><circle cx="180" cy="150" r="56.5"/></clipPath>
+              <clipPath id="profile-warm-front-clip" clipPathUnits="userSpaceOnUse">
+                <path d="M0 150H360V300H0Z" transform="rotate(-5 180 150)"/>
+              </clipPath>
+              <linearGradient id="profile-light-trail" x1="308" y1="132" x2="308" y2="150" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#f3d59c" stop-opacity="0"/>
+                <stop offset="1" stop-color="#b7834b" stop-opacity=".82"/>
+              </linearGradient>
+              <linearGradient id="profile-secondary-trail" x1="270" y1="137" x2="270" y2="150" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#f3d59c" stop-opacity="0"/>
+                <stop offset="1" stop-color="#426d63" stop-opacity=".68"/>
+              </linearGradient>
+            </defs>
+              <circle cx="180" cy="150" r="116" fill="url(#profile-glow)"/>
+              <circle cx="180" cy="150" r="77" stroke="#8c603b" stroke-opacity=".1" stroke-width=".8"/>
+              <ellipse cx="180" cy="150" rx="128" ry="45" transform="rotate(-5 180 150)" stroke="#8c603b" stroke-opacity=".48" stroke-width="1.15"/>
+              <ellipse cx="180" cy="150" rx="130" ry="82" transform="rotate(27 180 150)" stroke="#426d63" stroke-opacity=".38" stroke-width="1.15"/>
+              <ellipse cx="180" cy="150" rx="112" ry="43" transform="rotate(58 180 150)" stroke="#b7834b" stroke-opacity=".24" stroke-width=".9"/>
+              <g class="profile-hero-orbiting-light profile-hero-orbiting-light--rear">
+                <path d="M308 132v18" stroke="url(#profile-light-trail)" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="308" cy="150" r="3.7" fill="#c18b50"/>
+                <circle cx="308" cy="150" r="8" fill="#c18b50" fill-opacity=".16"/>
+              </g>
+              <g class="profile-hero-core">
+                <circle cx="180" cy="150" r="57" fill="url(#profile-core)" stroke="#fffaf0" stroke-opacity=".48" stroke-width=".8"/>
+                <ellipse cx="157" cy="127" rx="25" ry="16" transform="rotate(-34 157 127)" fill="url(#profile-specular)"/>
+                <g clip-path="url(#profile-core-clip)">
+                  <path d="M134 118c7-7 14-11 24-13l18 49c-8 5-15 12-21 20z" fill="url(#profile-window-reflection)" opacity=".62"/>
+                  <ellipse cx="205" cy="174" rx="38" ry="34" fill="url(#profile-shadow)"/>
+                </g>
+              </g>
+              <g clip-path="url(#profile-warm-front-clip)" aria-hidden="true">
+                <ellipse cx="180" cy="150" rx="128" ry="45" transform="rotate(-5 180 150)" stroke="#8c603b" stroke-opacity=".48" stroke-width="1.15"/>
+              </g>
+              <circle cx="61" cy="97" r="3" fill="#b7834b" fill-opacity=".8"/>
+              <circle cx="288" cy="211" r="2.6" fill="#426d63" fill-opacity=".72"/>
+              <path d="M180 20v12M174 26h12" stroke="#8c603b" stroke-opacity=".46" stroke-width="1" stroke-linecap="round"/>
+              <image class="profile-memory-sketch" href="images/profile/illustrations/mayday-concert-ticket-sketch.png" x="10" y="233" width="80" height="54" preserveAspectRatio="xMidYMid meet" opacity=".58" aria-hidden="true"/>
+              <image class="profile-memory-sketch" href="images/profile/illustrations/boarding-pass-pencil-sketch.png" x="331" y="13" width="90" height="60" preserveAspectRatio="xMidYMid meet" opacity=".54" aria-hidden="true"/>
+              <image class="profile-memory-sketch" href="images/profile/illustrations/vintage-travel-suitcase-sketch.png" x="344" y="70" width="95" height="64" preserveAspectRatio="xMidYMid meet" opacity=".42" aria-hidden="true"/>
+              <image class="profile-camera-sketch" href="images/profile/camera-vintage-slr-sketch.png" x="306" y="269" width="105" height="70" preserveAspectRatio="xMidYMid meet" transform="rotate(-9 358.5 304)" opacity=".58" aria-hidden="true"/>
+              <g class="profile-hero-orbiting-light profile-hero-orbiting-light--front">
+                <path d="M308 132v18" stroke="url(#profile-light-trail)" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="308" cy="150" r="3.7" fill="#c18b50"/>
+                <circle cx="308" cy="150" r="8" fill="#c18b50" fill-opacity=".16"/>
+              </g>
+              <g class="profile-hero-secondary-light">
+                <path d="M270 137v13" stroke="url(#profile-secondary-trail)" stroke-width="1.4" stroke-linecap="round"/>
+                <circle cx="270" cy="150" r="2.7" fill="#426d63"/>
+                <circle cx="270" cy="150" r="6" fill="#426d63" fill-opacity=".13"/>
+              </g>
+          </svg>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -71,14 +158,7 @@
       <div class="section-body">
         <p class="current-work-affiliation"><strong>Foxconn Industrial Internet (Fii)</strong><br>CESBG · HPC Platform</p>
         <p class="work-period"><time datetime="2026-02">Feb 2026</time>–Present</p>
-        <p>I work on the systems around LLM applications — how their outputs are evaluated, how services are monitored, and how other teams interact with them.</p>
-        <ul>
-          <li><strong>Evaluation:</strong> Developing evaluation workflows and scoring criteria for AI-assisted diagnosis and guidance.</li>
-          <li><strong>Observability:</strong> Building monitoring and analytics tools to understand service behavior and investigate issues.</li>
-          <li><strong>Internal tooling:</strong> Creating self-service interfaces with progress tracking and clear status information.</li>
-        </ul>
-        <p>I work with engineering and domain specialists to clarify requirements, review results, and refine tools for the people who use them.</p>
-        <p><strong>Technical foundation:</strong> I’m familiar with GPU training and pretraining fundamentals, with hands-on experience reproducing established training workflows, comparing results with public references, and documenting validation steps.</p>
+        <p>As an AI Application Engineer, I work with engineering and domain specialists to make LLM applications easier to evaluate, monitor, and use. My focus is turning technical needs into clear workflows and practical internal tools.</p>
         <div class="button-wrapper">
           <a class="button" href="swe.html#current-work"><span class="link-label">Explore current work</span></a>
         </div>
@@ -87,25 +167,62 @@
 
     <section class="page-section" aria-labelledby="section-2-title">
       <div class="section-heading">
-        <p class="section-index">02 / BACKGROUND</p>
-        <h2 id="section-2-title">About Me</h2>
+        <p class="section-index">02 / ABOUT ME</p>
+        <h2 id="section-2-title">A little more about me</h2>
       </div>
       <div class="section-body">
         <div class="prose">
         <p>
-          I studied at Cornell University and King’s College London.
-          Before my current role, I explored HCI, data analytics, and digital product development.
-          That interdisciplinary foundation continues to inform how I build and evaluate AI applications.
+          My path has moved through HCI, data analytics, and digital product development before my
+          current work in AI applications. Each has shaped how I think about people, evidence, and technology.
         </p>
         <p>
           My experience includes collaborating with US-based partners on the Seneca Lake Scenic Byway
           project and researching China–West internet traffic and connectivity patterns with a
           UK-based team at King’s College London.
         </p>
-        <p>
-          Beyond the screen, I love capturing still moments with a camera,
-          getting lost in concerts and café corners, and creating things that speak to both heart and logic.
-        </p>
+      </div>
+      <p class="interest-intro">Away from work, I’m drawn to moments worth noticing.</p>
+      <div class="profile-interest-grid" role="group" aria-label="Personal interests">
+        <div class="interest-card interest-card--photography">
+          <button class="interest-card__face interest-card__front" type="button" aria-expanded="false" aria-label="Show Photography photo">
+            <span class="interest-card__index">01 / LOOK CLOSER</span>
+            <span class="interest-card__title">Photography</span>
+            <span class="interest-card__note">Finding stories in small details.</span>
+            <span class="interest-card__hint"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M6.2 9.1V4.4a1.2 1.2 0 0 1 2.4 0v4.2-1.2a1.2 1.2 0 0 1 2.4 0v1.2-.7a1.2 1.2 0 0 1 2.4 0v1.1-.2a1.2 1.2 0 0 1 2.4 0v4.1a4.8 4.8 0 0 1-4.8 4.8h-.8a4.8 4.8 0 0 1-3.4-1.4l-2.2-2.2a1.3 1.3 0 0 1 1.8-1.8l1.2 1.1" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 5.2 1.8 4M5.2 3V1.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg><span class="sr-only">Click or tap to flip.</span></span>
+          </button>
+          <button class="interest-card__face interest-card__back" type="button" data-interest-name="Photography" aria-label="Show the Photography card">
+            <span class="interest-card__visual" aria-hidden="true" hidden></span>
+            <img class="interest-card__photo" src="images/profile/interests/sunlit-building-facade.jpeg" alt="A sunlit stone building beneath a clear blue sky." loading="eager" decoding="async">
+            <span class="interest-card__return">Turn back <span aria-hidden="true">↶</span></span>
+          </button>
+        </div>
+        <div class="interest-card interest-card--music">
+          <button class="interest-card__face interest-card__front" type="button" aria-expanded="false" aria-label="Show Live Music photo">
+            <span class="interest-card__index">02 / BE PRESENT</span>
+            <span class="interest-card__title">Live Music</span>
+            <span class="interest-card__note">Losing track of time in a crowd.</span>
+            <span class="interest-card__hint"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M6.2 9.1V4.4a1.2 1.2 0 0 1 2.4 0v4.2-1.2a1.2 1.2 0 0 1 2.4 0v1.2-.7a1.2 1.2 0 0 1 2.4 0v1.1-.2a1.2 1.2 0 0 1 2.4 0v4.1a4.8 4.8 0 0 1-4.8 4.8h-.8a4.8 4.8 0 0 1-3.4-1.4l-2.2-2.2a1.3 1.3 0 0 1 1.8-1.8l1.2 1.1" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 5.2 1.8 4M5.2 3V1.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg><span class="sr-only">Click or tap to flip.</span></span>
+          </button>
+          <button class="interest-card__face interest-card__back" type="button" data-interest-name="Live Music" aria-label="Show the Live Music card">
+            <span class="interest-card__visual" aria-hidden="true" hidden></span>
+            <img class="interest-card__photo" src="images/profile/interests/live-music-concert-stage.jpeg" alt="Musicians performing on a stage lit with blue visuals." loading="eager" decoding="async">
+            <span class="interest-card__return">Turn back <span aria-hidden="true">↶</span></span>
+          </button>
+        </div>
+        <div class="interest-card interest-card--cafes">
+          <button class="interest-card__face interest-card__front" type="button" aria-expanded="false" aria-label="Show Café Corners photo">
+            <span class="interest-card__index">03 / TAKE A PAUSE</span>
+            <span class="interest-card__title">Café Corners</span>
+            <span class="interest-card__note">A quiet place to read or make.</span>
+            <span class="interest-card__hint"><svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M6.2 9.1V4.4a1.2 1.2 0 0 1 2.4 0v4.2-1.2a1.2 1.2 0 0 1 2.4 0v1.2-.7a1.2 1.2 0 0 1 2.4 0v1.1-.2a1.2 1.2 0 0 1 2.4 0v4.1a4.8 4.8 0 0 1-4.8 4.8h-.8a4.8 4.8 0 0 1-3.4-1.4l-2.2-2.2a1.3 1.3 0 0 1 1.8-1.8l1.2 1.1" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 5.2 1.8 4M5.2 3V1.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg><span class="sr-only">Click or tap to flip.</span></span>
+          </button>
+          <button class="interest-card__face interest-card__back" type="button" data-interest-name="Café Corners" aria-label="Show the Café Corners card">
+            <span class="interest-card__visual" aria-hidden="true"></span>
+            <img class="interest-card__photo" src="images/profile/interests/sunset-gathering.jpeg" alt="A hillside gathering photographed at sunset." loading="eager" decoding="async" hidden>
+            <span class="interest-card__return">Turn back <span aria-hidden="true">↶</span></span>
+          </button>
+        </div>
       </div>
       </div>
     </section>
@@ -113,12 +230,12 @@
     <section class="page-section" aria-labelledby="section-3-title">
       <div class="section-heading">
         <p class="section-index">03 / EDUCATION & AVAILABILITY</p>
-        <h2 id="section-3-title">Background & Availability</h2>
+        <h2 id="section-3-title">Education & Availability</h2>
       </div>
       <div class="section-body">
         <div class="prose">
         <ul>
-          <li><strong>Visa Status:</strong> UK PSW eligible to Sep 2027</li>
+          <li><strong>Visa Status:</strong> Eligible to work in the UK under the PSW route through Sep 2027</li>
           <li>
             <strong>Education:</strong><br>
             <span class="edu-indent">MPS in Information Science — Cornell University<span class="education-period"><time datetime="2024-08">Aug 2024</time>–<time datetime="2025-05">May 2025</time></span></span><br>
@@ -140,7 +257,7 @@
       <div class="section-body">
         <div class="prose">
         <p>
-          I believe that good design is not only functional but empathetic.
+          I believe that good design is not only functional but also empathetic.
           I care deeply about inclusion, access, and clarity — and I build with the hope
           that technology can bridge worlds, not widen them.
         </p>
@@ -159,6 +276,7 @@
   </main>
 
   <div id="footer"></div>
+  <script src="profile.js?v=profile-cards-3" defer></script>
   <script src="site.js" defer></script>
 </body>
 </html>
